@@ -1,0 +1,9 @@
+# config/doctrine/schema.yml
+
+prefix_com:
+    actAs: { Timestampable: ~ }
+    columns:
+        prefix: { type: integer, notnull: true, unique: true }
+        com_id: { type: integer, notnull: true }
+
+
