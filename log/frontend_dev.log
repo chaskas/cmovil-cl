@@ -12,3 +12,112 @@ Feb 09 12:33:14 symfony [info] {sfWebDebugLogger} Factories 67.55 ms (1)
 Feb 09 12:33:14 symfony [info] {sfWebDebugLogger} Action "default/index" 0.12 ms (1)
 Feb 09 12:33:14 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 8.57 ms (1)
 Feb 09 12:33:14 symfony [info] {sfWebResponse} Send content (28648 o)
+Feb 10 13:30:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /PrefixCom with parameters array (  'module' => 'PrefixCom',  'action' => 'index',)
+Feb 10 13:30:16 symfony [info] {sfFrontWebController} Action "PrefixCom/index" does not exist
+Feb 10 13:30:16 symfony [err] {sfError404Exception} Action "PrefixCom/index" does not exist.
+Feb 10 13:30:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Feb 10 13:30:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 10 13:30:16 symfony [info] {sfWebDebugLogger} Configuration 2.36 ms (5)
+Feb 10 13:30:16 symfony [info] {sfWebDebugLogger} Factories 383.84 ms (1)
+Feb 10 13:30:25 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /prefix with parameters array (  'module' => 'prefix',  'action' => 'index',)
+Feb 10 13:30:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 10 13:30:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 10 13:30:25 symfony [info] {prefixActions} Call "prefixActions->executeIndex()"
+Feb 10 13:30:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 10 13:30:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.prefix AS p__prefix, p.com_id AS p__com_id FROM prefix_com p - ()
+Feb 10 13:30:26 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/modules/prefix/templates/indexSuccess.php"
+Feb 10 13:30:27 symfony [info] {sfPHPView} Decorate content with "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:30:27 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:30:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 10 13:30:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 10 13:30:27 symfony [info] {sfWebDebugLogger} Configuration 14.16 ms (10)
+Feb 10 13:30:27 symfony [info] {sfWebDebugLogger} Factories 7.91 ms (1)
+Feb 10 13:30:27 symfony [info] {sfWebDebugLogger} Action "prefix/index" 749.49 ms (1)
+Feb 10 13:30:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 10 13:30:27 symfony [info] {sfWebDebugLogger} View "Success" for "prefix/index" 1160.90 ms (1)
+Feb 10 13:30:27 symfony [info] {sfWebResponse} Send content (362080 o)
+Feb 10 13:30:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /prefix/show/id/2514 with parameters array (  'module' => 'prefix',  'action' => 'show',  'id' => '2514',)
+Feb 10 13:30:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 10 13:30:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 10 13:30:59 symfony [info] {prefixActions} Call "prefixActions->executeShow()"
+Feb 10 13:30:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 10 13:30:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.prefix AS p__prefix, p.com_id AS p__com_id FROM prefix_com p WHERE (p.id = ?) LIMIT 1 - (2514)
+Feb 10 13:30:59 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/modules/prefix/templates/showSuccess.php"
+Feb 10 13:30:59 symfony [info] {sfPHPView} Decorate content with "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:30:59 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:30:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 10 13:30:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 10 13:30:59 symfony [info] {sfWebDebugLogger} Configuration 3.23 ms (9)
+Feb 10 13:30:59 symfony [info] {sfWebDebugLogger} Factories 23.72 ms (1)
+Feb 10 13:30:59 symfony [info] {sfWebDebugLogger} Action "prefix/show" 91.70 ms (1)
+Feb 10 13:30:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Feb 10 13:30:59 symfony [info] {sfWebDebugLogger} View "Success" for "prefix/show" 6.69 ms (1)
+Feb 10 13:30:59 symfony [info] {sfWebResponse} Send content (30526 o)
+Feb 10 13:31:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /prefix/show/id/2489 with parameters array (  'module' => 'prefix',  'action' => 'show',  'id' => '2489',)
+Feb 10 13:31:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 10 13:31:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 10 13:31:06 symfony [info] {prefixActions} Call "prefixActions->executeShow()"
+Feb 10 13:31:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 10 13:31:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.prefix AS p__prefix, p.com_id AS p__com_id FROM prefix_com p WHERE (p.id = ?) LIMIT 1 - (2489)
+Feb 10 13:31:06 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/modules/prefix/templates/showSuccess.php"
+Feb 10 13:31:06 symfony [info] {sfPHPView} Decorate content with "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:31:06 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 10 13:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 10 13:31:06 symfony [info] {sfWebDebugLogger} Configuration 3.09 ms (9)
+Feb 10 13:31:06 symfony [info] {sfWebDebugLogger} Factories 9.36 ms (1)
+Feb 10 13:31:06 symfony [info] {sfWebDebugLogger} Action "prefix/show" 7.44 ms (1)
+Feb 10 13:31:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Feb 10 13:31:06 symfony [info] {sfWebDebugLogger} View "Success" for "prefix/show" 5.71 ms (1)
+Feb 10 13:31:06 symfony [info] {sfWebResponse} Send content (30524 o)
+Feb 10 13:39:34 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /prefix with parameters array (  'module' => 'prefix',  'action' => 'index',)
+Feb 10 13:39:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 10 13:39:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 10 13:39:34 symfony [info] {prefixActions} Call "prefixActions->executeIndex()"
+Feb 10 13:39:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 10 13:39:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.prefix AS p__prefix, p.com_id AS p__com_id FROM prefix_com p - ()
+Feb 10 13:39:35 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/modules/prefix/templates/indexSuccess.php"
+Feb 10 13:39:36 symfony [info] {sfPHPView} Decorate content with "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:39:36 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:39:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 10 13:39:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 10 13:39:36 symfony [info] {sfWebDebugLogger} Configuration 3.50 ms (9)
+Feb 10 13:39:36 symfony [info] {sfWebDebugLogger} Factories 9.18 ms (1)
+Feb 10 13:39:36 symfony [info] {sfWebDebugLogger} Action "prefix/index" 657.14 ms (1)
+Feb 10 13:39:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Feb 10 13:39:36 symfony [info] {sfWebDebugLogger} View "Success" for "prefix/index" 1120.11 ms (1)
+Feb 10 13:39:36 symfony [info] {sfWebResponse} Send content (362110 o)
+Feb 10 13:41:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /prefix/show/id/10 with parameters array (  'module' => 'prefix',  'action' => 'show',  'id' => '10',)
+Feb 10 13:41:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 10 13:41:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 10 13:41:21 symfony [info] {prefixActions} Call "prefixActions->executeShow()"
+Feb 10 13:41:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 10 13:41:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.prefix AS p__prefix, p.com_id AS p__com_id FROM prefix_com p WHERE (p.id = ?) LIMIT 1 - (10)
+Feb 10 13:41:21 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/modules/prefix/templates/showSuccess.php"
+Feb 10 13:41:21 symfony [info] {sfPHPView} Decorate content with "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:41:21 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:41:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 10 13:41:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 10 13:41:21 symfony [info] {sfWebDebugLogger} Configuration 3.14 ms (9)
+Feb 10 13:41:21 symfony [info] {sfWebDebugLogger} Factories 8.36 ms (1)
+Feb 10 13:41:21 symfony [info] {sfWebDebugLogger} Action "prefix/show" 7.85 ms (1)
+Feb 10 13:41:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Feb 10 13:41:21 symfony [info] {sfWebDebugLogger} View "Success" for "prefix/show" 5.54 ms (1)
+Feb 10 13:41:21 symfony [info] {sfWebResponse} Send content (30502 o)
+Feb 10 13:42:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'prefix',  'action' => 'index',)
+Feb 10 13:42:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 10 13:42:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 10 13:42:46 symfony [info] {prefixActions} Call "prefixActions->executeIndex()"
+Feb 10 13:42:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 10 13:42:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.prefix AS p__prefix, p.com_id AS p__com_id FROM prefix_com p - ()
+Feb 10 13:42:46 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/modules/prefix/templates/indexSuccess.php"
+Feb 10 13:42:47 symfony [info] {sfPHPView} Decorate content with "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:42:47 symfony [info] {sfPHPView} Render "/media/D/www/cmovil-cl/apps/frontend/templates/layout.php"
+Feb 10 13:42:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 10 13:42:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 10 13:42:47 symfony [info] {sfWebDebugLogger} Configuration 58.38 ms (10)
+Feb 10 13:42:47 symfony [info] {sfWebDebugLogger} Factories 64.86 ms (1)
+Feb 10 13:42:47 symfony [info] {sfWebDebugLogger} Action "prefix/index" 660.41 ms (1)
+Feb 10 13:42:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Feb 10 13:42:47 symfony [info] {sfWebDebugLogger} View "Success" for "prefix/index" 1120.72 ms (1)
+Feb 10 13:42:47 symfony [info] {sfWebResponse} Send content (362045 o)

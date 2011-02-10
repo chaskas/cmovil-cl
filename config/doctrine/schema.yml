@@ -1,9 +1,24 @@
-# config/doctrine/schema.yml
-
-prefix_com:
-    actAs: { Timestampable: ~ }
-    columns:
-        prefix: { type: integer, notnull: true, unique: true }
-        com_id: { type: integer, notnull: true }
-
-
+PrefixCom:
+  connection: doctrine
+  tableName: prefix_com
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    prefix:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    com_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
